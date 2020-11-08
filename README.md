@@ -49,3 +49,23 @@
 8. 并发服务器
 9. close函数
 10. getsockname和getperrname函数
+
+### TCP客户/服务器程序示例
+1. 概述
+2. TCP服务器程序:main函数
+3. TCP服务器程序:str_echo函数
+4. TCP客户端程序:main函数
+5. TCP客户端程序:str_cli函数
+6. 正常启动
+7. 正常终止
+8. POSIX信号处理
+9. 处理SIGCHLD信号
+10. wait和waitpid函数
+11. accept返回前连接终止
+12. 服务器进程终止
+13. SIGPIPE信号
+14. 服务器主机崩溃
+15. 服务器主机崩溃后重启
+16. 服务器主机关机
+17. TCP程序例子小结
+18. 数据格式
