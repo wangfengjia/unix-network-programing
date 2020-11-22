@@ -114,6 +114,29 @@
 14. UDP中的外出接口的确定
 15. 使用select函数的TCP和UDP服务器
 
+### 名字与地址转换
+1. 概述
+2. 域名系统
+3. gethostbyname函数
+4. gethostbyaddr函数
+5. getservbyname和getservbyport函数
+6. getaddrinfo函数
+7. gai_strerror函数
+8. freeaddrinfo函数
+9. getaddrinfo函数: IPv6
+10. getaddrinfo函数: 例子
+11. host_serv函数
+12. tcp_connect函数
+13. tcp_listen函数
+14. udp_client函数
+15. udp_connect函数
+16. udp_server函数
+17. getnameinfo函数
+18.可重入函数
+19. gethostbyname_r和gethostbyaddr_r函数
+20. 作废的IPv6地址解析函数
+21. 其他网络相关信息
+
 
 
 
