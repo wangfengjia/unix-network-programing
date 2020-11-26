@@ -144,6 +144,14 @@
 4. IPv6地址测试宏
 5. 源代码的可移植性
 
+### 守护进程和inetd超级服务器
+1. 概述
+2. syslogd守护进程
+3. syslog函数
+4. daemon_init函数
+5. inetd守护进程
+6. daemon_inetd函数
+
 
 
 
