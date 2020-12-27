@@ -6,6 +6,7 @@
 #define UNIX_NETWORK_PROGRAMING_LIB_H
 
 #include "../lib/unp.h"
+#include "../lib/unpthread.h"
 #include <stdbool.h>
 //父进程管理子进程的信息结构
 
@@ -17,6 +18,16 @@ typedef struct {
 } Child;
 
 Child *cptr; // array of Child structures; calloc'ed
+
+typedef struct {
+    pthread_t thread_tid; // Thread ID
+    long thread_count; // connections handled
+} Thread;
+Thread *tptr;
+int thread_listenfd, thread_nthreads;
+socklen_t thread_addrlen;
+pthread_mutex_t thread_mlock;
+
 #define MAXN 16384 // max bytes to request from server
 
 //显示总cpu时间
@@ -27,5 +38,7 @@ void web_child(int);
 pid_t child_make(int, int, int);
 //派生各个子进程的第二个版本，父进程创建一对unix域套接字，父子进程通过unix域套接字通信
 pid_t child_make_v2(int, int, int);
+void thread_make(int);
+void thread_make_v2(int);
 
 #endif //UNIX_NETWORK_PROGRAMING_LIB_H
